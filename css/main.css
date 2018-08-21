@@ -1,0 +1,419 @@
+/*
+    Contains all the CSS styles used in this project
+*/
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+	background: url(//res.wx.qq.com/a/wx_fed/webwx/res/static/img/2zrdI1g.jpg) no-repeat 50%;
+    line-height: 1;
+	background-size: cover;
+padding:2px;
+margins:5px;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+   background: url(//res.wx.qq.com/a/wx_fed/webwx/res/static/img/2zrdI1g.jpg) no-repeat 50%;
+    font-family: sans-serif;
+}
+.authenticate_container {
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+    background-color: white;
+    position: fixed;
+    width: 50%;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 5px 0px #343434;
+    font-size: 20px;
+    text-align: left;
+    min-width: 800px;
+}
+
+.authenticate_container div {
+    position: relative;
+    height: 200px;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-68%);
+}
+
+.authenticate_container div * {
+    margin-bottom: 5px;
+}
+
+.authenticate_container button {
+    position: relative;
+    bottom: -20px;
+    cursor: pointer;
+}
+
+.authenticate_container label {
+    font-size: 14px;
+}
+#invalid_login_message {
+    font-size: 10pt;
+    color: red;
+}
+
+#invalid_registration_message {
+    font-size: 10pt;
+    color: red;
+}
+
+#register_container {
+    border-right: 1px solid #f2f2f2;
+    float: left;
+    width: 49.5%;
+}
+
+#login_container {
+    margin-top: 10px;
+    float: right;
+}
+
+#member_list{
+    position: relative;
+    left: 0%;
+    min-width: 500px;
+    width: 10%;
+    height: 80%;
+}
+
+#chat_window {
+    position: relative;
+    left: 5%;
+    min-width: 500px;
+    width: 90%;
+    height: 80%;
+    background-color:  #f2f2f2 ;
+    border: 1.2px solid lightgrey;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow-y: scroll;
+	
+}
+
+#recipients {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    margin: 5px;
+    width: 80%;
+    height: 40px;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
+    font-size: 10pt;
+}
+
+#message_box {
+    position: fixed;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 85%;
+    height: 60px;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
+    bottom: 5px;
+    margin: 5px;
+    margin-left: 10px;
+}
+
+#reply_container {
+    position: relative;
+    background-color: #f2f2f2;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    height: 80px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 5;
+}
+
+#send_button {
+    position:  absolute;
+    right: 10px;
+    width: 60px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+	background-color: #6495ED;
+	color:white;
+}
+
+
+#logout_button {
+    position: fixed;
+    top: 70px;
+    left: 240px;
+    width: 60px;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.message {
+    display: block;
+    min-height: 5px;
+    max-width: 300px;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	font-size: 15px;
+}
+
+.message p {
+    text-wrap: normal;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    word-wrap: break-word;
+}
+
+.message_from_self {
+    float: right;
+    background-color:  rgba(120, 208, 83, 0.84);
+    color: black;
+    margin-left: 50%;
+}
+
+.message_from_other {
+    float: left;
+    background-color: white ;
+    color: black;
+    margin-right: 50%;
+}
+
+#search_clickout {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#search_popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    z-index: 11;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+    padding: 15px;
+    text-align: center;
+}
+
+#groupcheck {
+	width: 90%;
+	height: 120px;
+	max-height: 120px;
+    overflow-y: scroll;
+	text-align: left;
+}
+
+#search_popup h2 {
+    font-size: 20pt;
+}
+
+#search_box {
+    position: relative;
+    top: 20px;
+    height: 40px;
+    width: 200px;
+    padding: 3px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+#search_results {
+    position: relative;
+    font-weight: normal;
+    font-size: 10pt;
+    padding: 10px;
+    width: 90%;
+    height: 30%;
+    margin: 0 auto;
+    top: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.empty_search_results_text {
+    font-style: italic;
+    cursor: default;
+    font-weight: normal;
+}
+
+#search_results p:not(.empty_search_results_text):hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+// interface------------------
+.logoutbutton {
+	position: absolute;
+	right:    0;
+	bottom:   0;
+	border-radius: 10px;
+	font-size: 12px;
+}
+
+.userBlock{
+	min-height: 100px;
+	position: relative;
+	border-radius: 10px;
+	float: middle;
+	align: middle;
+	vertical-align: middle;
+	             background-color: #b6b5c1;
+}
+
+.modulePanel {
+	
+	border: 1px solid;
+	float: center;
+	width: 100%;    
+	border: 1px solid #ddd;
+    	border-radius: 4px;
+    	margins: 5px;
+    	padding:4px;
+		    background-color: #b5b9c1;
+}
+
+ul.navBar {
+
+    algin:center;
+    display:inline;
+    padding:10px;
+    margins:10px;
+}
+
+ul.navBar li{
+    algin:middle;
+    display:inline;
+}
+
+ul.navBar li button{
+    vertical-align: text-center;
+    border-radius:50px;
+    border-style: solid;
+    background-color:white;
+    min-width:120px;
+    min-height:50px;
+    -webkit-transition-duration: 0.3s; 
+    transition-duration: 0.3s;
+}
+
+ul.navBar li button:hover{
+    background-color: #8080FF;
+    color: white;
+    -webkit-transition-duration: 0.3s; 
+    transition-duration: 0.3s;
+}
+
+.contentPanel {
+	/*background: url(//res.wx.qq.com/a/wx_fed/webwx/res/static/img/2zrdI1g.jpg) no-repeat 50%;*/
+	display:block;
+	float:right;
+	margin:0px;
+	padding:0px;
+	border:none;
+	width: 100%;
+	height:80%;
+	//overflow: scroll;
+}
+
+
+.groupPanel {
+    	//background-color: #80FFFF;
+		
+	border: 1px solid;
+	float: left;
+	max-width:200px;
+	min-width:100px;
+	width: 30%;
+	height: 80%;
+}
+
+
+/* The side navigation menu */
+.groupnav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+
+/* When you mouse over the navigation links, change their color */
+.groupnav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.groupnav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .groupnav {padding-top: 15px;}
+    .groupnav a {font-size: 18px;}
+}
+
+
+.groupButton{
+width:49%;
+padding:0px;
+margins:0px;
+height:40px;
+background-color:white;
+color:black;
+}

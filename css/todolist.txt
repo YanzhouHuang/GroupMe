@@ -1,0 +1,36 @@
+
+TODO:
+
+Calendar:-----------------------------------------------------
+Indicate new changes
+Can't open calendar unless group cookie set
+Time for events
+
+Display Event Details
+Edit/Remove event
+Mark Event as Complete
+
+Ajax render calendar loop (do it in the render calendar loop?)
+
+
+Group:-----------------------------------------------------
+Delete Group Created by User
+Display Group/JoinCode better
+
+
+Other:-----------------------------------------------------
+Only one overlay at a time
+Show progress bar view
+File upload
+Settings/Change Image
+
+
+Cosmetic:-----------------------------------------------------
+Remove File Share
+Show image in event creation
+Sort events by time/date
+
+
+Last:-----------------------------------------------------
+Clean up the file organization 
+	-build calendar from php?
